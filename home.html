@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexandre Dussolle</title>
+  <link rel="stylesheet" href="latex-css-master/style.css" />
+  <link rel="icon" type="image/png" href="files/icon.png">
+ 
+
+  <style>
+    #theme-toggle {
+      position: fixed; top: 1rem; right: 1rem;
+      display: flex; padding: .4rem;
+      border: none; background: none;
+      color: var(--body-color);      /* dark in light mode, light in dark mode */
+      cursor: pointer; opacity: 1;
+      transition: opacity .2s, transform .3s;
+    }
+    #theme-toggle:hover { opacity: 1; transform: rotate(15deg) scale(1.1); }
+    #theme-toggle:focus-visible {
+      outline: 2px solid var(--link-focus-outline); outline-offset: 2px; border-radius: 6px;
+    }
+    #theme-toggle svg { width: 1.7rem; height: 1.7rem; }
+  </style>
+</head>
+<body>
+  <script>
+    const savedTheme = sessionStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+      document.body.classList.add("latex-dark");
+    } else if (savedTheme === null) {
+      sessionStorage.setItem("theme", "light");
+    }
+  </script>
+  
+  <button id="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
+  <header>
+  <h1><a href="home.html" style="color: inherit; text-decoration: none;">Alexandre Dussolle</a></h1>
+  <p class="subtitle">
+  <a href="home.html" style="color: inherit; text-decoration: none; margin-right: 0.2em;"><ins>Home</ins></a>
+  <a href="research.html" style="color: inherit; text-decoration: none; margin-right: 0.2em;">Research</a>
+  <a href="blog.html" style="color: inherit; text-decoration: none; margin-right: 0.2em;">Blog</a>
+  <a href="cv.html" style="color: inherit; text-decoration: none;">CV</a>
+  </p>
+  <!-- <p class="subtitle"><ins>Home</ins>    Research    Blog    CV</p> -->
+  <!-- <p class="author">HOME    RESEARCH    BLOG    CV<br> 31 October 2026</p> -->
+  </header>
+  <div class="abstract">
+    <h2>Abstract</h2>
+    <p>Welcome to my webpage!</p>
+  </div>
+
+  <!-- <h2>About me</h2> -->
+  <p>I'm a MSc student at the MVA, and an Engineering student of Ecole des Ponts. <br>
+    I am looking for a six months research internship and hopefully a PhD after that. <br>
+    Currently working on too many things...</p>
+  
+  <p style="margin-top: 1.0em;"><b>Contact.</b> firstname.lastname@ip-paris.fr</p>
+
+  <div class="social-links">
+    <a href="https://scholar.google.com/citations?user=OI8jQpkAAAAJ&hl=fr"
+      target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor"
+          d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm-7 9.27V17c0 2.21 3.13 4 7 4s7-1.79 7-4v-4.73l-7 3.82-7-3.82z"/>
+      </svg>
+      Google Scholar
+    </a>
+
+    <a href="https://github.com/AlexandreDussolle/"
+      target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor"
+          d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.05c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.29-2.61 5.23-5.1 5.51.4.35.76 1.03.76 2.08V22c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9z"/>
+      </svg>
+      GitHub
+    </a>
+  
+
+  <a href="https://www.linkedin.com/in/alexandre-dussolle-462a34217/"
+    target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor"
+        d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52zM7.93 18.5H4.96V9h2.97v9.5zM6.45 7.7a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44zM19 18.5h-2.97v-4.62c0-1.1-.02-2.52-1.54-2.52-1.54 0-1.78 1.2-1.78 2.44v4.7H9.74V9h2.85v1.3h.04c.4-.75 1.37-1.54 2.82-1.54 3.01 0 3.57 1.98 3.57 4.55v5.19z"/>
+    </svg>
+    LinkedIn
+  </a>
+</div>
+  <!-- https://github.com/Axurios/ -->
+   <!-- https://www.linkedin.com/in/alexandre-dussolle-462a34217/ -->
+    <!-- https://scholar.google.com/citations?user=OI8jQpkAAAAJ&hl=fr -->
+     <!-- cv -->
+
+    <!-- <h2>Blog</h2>
+  <ul>
+    <li>
+      <span>Nov 2026.</span>
+      <a href="blog/invariance.html">On the invariances of Recursive Models</a>
+    </li>
+     <li>
+      <span>Feb 2026.</span>
+      <a href="blog/first-proof.html">An Attempt at "First Proof"</a>
+    </li>
+    <li>
+      <span>Dec 2025.</span>
+      <a href="blog/2025-12-08.html">On the way back from EurIPS 2025</a>
+    </li> -->
+  <!-- </ul> -->
+<h2>Blog</h2>
+
+<p class="blog-entry">
+  <span class="blog-date">Nov 2026.</span>
+  <a href="blog/invariance.html">On the Invariances of Recursive Models</a>
+</p>
+
+
+<p style="margin-top: 1.0em;">
+  <!-- <a href="blog.html">All blog posts</a> -->
+  <!-- <a href="blog.html" class="blog-date" color: inherit;>All blog posts</a> -->
+  <a href="blog.html" class="blog-all-link">All blog posts</a>
+</p>
+
+
+  <script>
+    var MOON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">' +
+               '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    var SUN  = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" ' +
+               'stroke-width="2" stroke-linecap="round" aria-hidden="true">' +
+               '<circle cx="12" cy="12" r="4.5"/>' +
+               '<path fill="none" d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41' +
+               'M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>';
+
+    var btn = document.getElementById("theme-toggle");
+    var dark = document.body.classList.contains("latex-dark");
+
+    function apply() {
+      document.body.classList.toggle("latex-dark", dark);
+      btn.innerHTML = dark ? SUN : MOON;
+    }
+
+    btn.addEventListener("click", function () {
+      dark = !dark;
+      sessionStorage.setItem("theme", dark ? "dark" : "light");
+      apply();
+    });
+
+    apply();
+  </script>
+</body>
+</html>
