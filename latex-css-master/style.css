@@ -935,7 +935,15 @@ a:hover {
   border-bottom-width: 2px;
 } */
 
-.blog-all-link {
-  color: inherit !important;
-  opacity: 0.6;
+.abstract2,
+.abstract2 p {
+  text-align: center;
+  margin-top: 0;
+}
+.abstract2 {
+  margin: 2.25rem 0;
+}
+.abstract2 > h2 {
+  font-size: 1rem;
+  margin-bottom: -1.7rem;
 }
